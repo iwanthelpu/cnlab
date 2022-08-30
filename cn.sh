@@ -29,20 +29,20 @@ iwanthelpu
 case $choice in
   # Pattern 1
   1)  echo "You have selected the option 1 -  Link State Routing"
-      curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Link_State_Routing/link_state_working.c --output link_state_routing.c
+      wget -q -O link_state_routing.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Link_State_Routing/link_state_working.c 
       echo "type: 12 to exit and"
       echo "Written to link_state_routing.c";;
   # Pattern 2
   2)  echo "You have selected the option 2 - Leaky Bucket"
-      curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Leaky_Bucket/leaky_bucket.c --output leaky_bucket.c
+      wget -q -O leaky_bucket.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Leaky_Bucket/leaky_bucket.c leaky_bucket.c
       echo "type: 12 to exit and"
       echo "Written to leaky_bucket.c";;
   # Pattern 3
   3)  echo "You have selected the option 3 -  TCP"
       mkdir tcp_program
       cd tcp_program
-      curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/server.c --output server.c
-      curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/client.c --output client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/server.c 
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/client.c 
       echo "Written Server to server.c and Client to client.c in tcp_program folder"
       cd ..
       echo "type: 12 to exit and"
@@ -51,7 +51,7 @@ case $choice in
   4)  echo "You have selected the option 4 -  UDP"
       mkdir udp_program
       cd udp_program
-      curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/server.c --output server.c
+      wget -q -O https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/server.c --output server.c
       curl -s https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/client.c --output client.c
       echo "Written Server to server.c and Client to client.c in udp_program folder"
       cd ..
