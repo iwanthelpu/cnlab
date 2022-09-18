@@ -30,12 +30,12 @@ case $choice in
   # Pattern 1
   1)  echo "You have selected the option 1 -  Link State Routing"
       wget -q -O link_state_routing.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Link_State_Routing/link_state_working.c  
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "Written to link_state_routing.c";;
   # Pattern 2
   2)  echo "You have selected the option 2 - Leaky Bucket"
       wget -q -O leaky_bucket.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Leaky_Bucket/leaky_bucket.c
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "Written to leaky_bucket.c";;
   # Pattern 3
   3)  echo "You have selected the option 3 -  TCP"
@@ -45,7 +45,7 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/client.c  client.c
       echo "Written Server to server.c and Client to client.c in tcp_program folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd tcp_program";;
   # Pattern 4
   4)  echo "You have selected the option 4 -  UDP"
@@ -55,7 +55,7 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/client.c  
       echo "Written Server to server.c and Client to client.c in udp_program folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd udp_program";;
   # Pattern 5
   5)  echo "You have selected the option 5-  Sliding Window - Selective Repeat "
@@ -65,7 +65,7 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Selective_Repeat/client.c  
       echo "Written Server to server.c and Client to client.c in sliding_window folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd sliding_window";;
   # Pattern 6
   6)  echo "You have selected the option 6-  Stop and Wait" 
@@ -75,7 +75,7 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/client.c
       wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c 
       echo "Written to folder stop_and_wait"
-      echo "type: 12 to exit and cd stop_and_wait ";;
+      echo "type: 13 to exit and cd stop_and_wait ";;
   # Pattern 7
   7)  echo "You have selected the option 7-  Go Back N "
       mkdir go_back_n
@@ -84,13 +84,13 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Go_Back_N/client.c  
       echo "Written Server to server.c and Client to client.c in go_back_n folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd go_back_n";;
   # Pattern 8
   8)  echo "You have selected the option 8-  Distance Vector Routing"
       wget -q -O distance_vector_routing.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Distance_Vector_Routing/distance-vector.c  
       echo "Written to distance_vector_routing.c"
-      echo "type: 12 to exit ";;
+      echo "type: 13 to exit ";;
   # Pattern 9
   9)  echo "You have selected the option 9-  FTP"
       mkdir ftp_program
@@ -99,20 +99,25 @@ case $choice in
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/FTP/client.c  
       echo "Written Server to server.c and Client to client.c in ftp_program folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd ftp_program";;
   # Pattern 10
-  10)  echo "You have selected the option 10-  SMTP"
+  10) echo "You have selected the option 10-  SMTP"
       mkdir smtp_program
       cd smtp_program
       wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/server.c  
       wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/client.c  
       echo "Written Server to server.c and Client to client.c in smtp_program folder"
       cd ..
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd smtp_program";;
   # Pattern 11
-  11)  echo "I want it all !!!!"
+  11) echo "You have selected the option 11-  NS2"
+      wget -q -O ns2.txt https://raw.githubusercontent.com/iwanthelpu/cnlab/master/ns2.txt
+      echo "Written to ns2.txt"
+      echo "type: 13 to exit ";;
+  # Pattern 12
+  12)  echo "I want it all !!!!"
       mkdir cn_lab
       cd cn_lab
 #LINK STATE ROUTING ###################
@@ -186,15 +191,19 @@ case $choice in
       echo "Written Server to server.c and Client to client.c in smtp_program folder"
       cd ..
 
+# ns2 #####################
+      wget -q -O ns2.txt https://raw.githubusercontent.com/iwanthelpu/cnlab/master/ns2.txt
+      echo "Written to ns2.txt"
+
 ##########################################################################################
-      echo "type: 12 to exit and"
+      echo "type: 13 to exit and"
       echo "type: cd cn_lab";;
   # Pattern 12
-  12)  echo "Quitting ..."
+  13)  echo "Quitting ..."
       exit;;
   # Default Pattern
   *) echo "invalid option";;
   
 esac
-  echo -n "Enter your menu choice [1-12]: "
+  echo -n "Enter your menu choice [1-13]: "
 done
