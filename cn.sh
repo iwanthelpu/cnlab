@@ -13,7 +13,7 @@ echo "8. Distance Vector Routing"
 echo "9. FTP"
 echo "10. SMTP"
 echo "11. ns2"
-echo "12. I want it All !! "
+echo "12. I want it All !!! "
 echo "13. Exit "
 echo -n "Enter your menu choice [1-13]: "
 
