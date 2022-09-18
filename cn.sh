@@ -67,10 +67,14 @@ case $choice in
       echo "type: 12 to exit and"
       echo "type: cd sliding_window";;
   # Pattern 6
-  6)  echo "You have selected the option 6-  Stop and Wait"
-      wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c  
-      echo "Written to stop_and_wait.c"
-      echo "type: 12 to exit ";;
+  6)  echo "You have selected the option 6-  Stop and Wait" 
+      mkdir stop_and_wait
+      cd stop_and_wait
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/client.c
+      wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c 
+      echo "Written to folder stop_and_wait"
+      echo "type: 12 to exit and cd stop_and_wait ";;
   # Pattern 7
   7)  echo "You have selected the option 7-  Go Back N "
       mkdir go_back_n
@@ -145,8 +149,13 @@ case $choice in
       cd ..
 
 #STOP AND WAIT ################
-      wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c  
-      echo "Written to stop_and_wait.c"
+      mkdir stop_and_wait
+      cd stop_and_wait
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/client.c
+      wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c 
+      echo "Written Server to server.c and Client to client.c in stop_and_wait folder"
+      cd ..
 
 #GO BACK N ################################################
       mkdir go_back_n
