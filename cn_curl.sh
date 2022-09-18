@@ -24,7 +24,7 @@ do
 
 # reading choice
 read choice
-iwanthelpu
+
 # case statement is used to compare one value with the multiple cases.
 case $choice in
   # Pattern 1
