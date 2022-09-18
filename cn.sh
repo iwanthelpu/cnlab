@@ -12,9 +12,10 @@ echo "7. Go back N"
 echo "8. Distance Vector Routing"
 echo "9. FTP"
 echo "10. SMTP"
-echo "11. I want it All !!"
-echo "12. Exit "
-echo -n "Enter your menu choice [1-12]: "
+echo "11. ns2"
+echo "12. I want it All !! "
+echo "13. Exit "
+echo -n "Enter your menu choice [1-13]: "
 
 # Running a forever loop using while statement
 # This loop will run until select the exit option.
