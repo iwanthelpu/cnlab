@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # creating a menu with the following options
-echo "SELECT YOUR PILL";
+echo "MAY THE FORCE BE WITH YOU";
 echo "1. Link State Routing"
 echo "2. Leaky Bucket"
 echo "3. TCP"
@@ -24,7 +24,6 @@ do
 
 # reading choice
 read choice
-iwanthelpu
 # case statement is used to compare one value with the multiple cases.
 case $choice in
   # Pattern 1
@@ -112,19 +111,19 @@ case $choice in
       mkdir cn_lab
       cd cn_lab
 #LINK STATE ROUTING ###################
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Link_State_Routing/link_state_working.c  link_state_routing.c
+      wget -q -O link_state_routing.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Link_State_Routing/link_state_working.c  
       echo "Written to link_state_routing.c"
 
 #LEAKY BUCKET #######################
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Leaky_Bucket/leaky_bucket.c  leaky_bucket.c
+      wget -q -O leaky_bucket.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Leaky_Bucket/leaky_bucket.c  
       echo "Written to leaky_bucket.c"
 
 
 #TCP #######################################
       mkdir tcp_program
       cd tcp_program
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/TCP/client.c  
       echo "Written Server to server.c and Client to client.c in tcp_program folder"
       cd ..
 
@@ -132,48 +131,48 @@ case $choice in
 # UDP #######################################      
       mkdir udp_program
       cd udp_program
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/UDP/client.c  
       echo "Written Server to server.c and Client to client.c in udp_program folder"
       cd ..
 
 #SLIDING WINDOW ##########################
       mkdir sliding_window
       cd sliding_window
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Selective_Repeat/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Selective_Repeat/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Selective_Repeat/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Selective_Repeat/client.c  
       echo "Written Server to server.c and Client to client.c in sliding_window folder"
       cd ..
 
 #STOP AND WAIT ################
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c  stop_and_wait.c
+      wget -q -O stop_and_wait.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Stop_And_Wait/stop_and_wait.c  
       echo "Written to stop_and_wait.c"
 
 #GO BACK N ################################################
       mkdir go_back_n
       cd go_back_n
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Go_Back_N/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Go_Back_N/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Go_Back_N/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Go_Back_N/client.c  
       echo "Written Server to server.c and Client to client.c in go_back_n folder"
       cd ..
 
 # Distance Vector #####################
-     wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Distance_Vector_Routing/distance-vector.c  distance_vector_routing.c
+     wget -q -O distance_vector_routing.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/Distance_Vector_Routing/distance-vector.c  
       echo "Written to distance_vector_routing.c"
 
 #FTP #########################
       mkdir ftp_program
       cd ftp_program
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/FTP/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/FTP/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/FTP/server.c  
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/FTP/client.c  
       echo "Written Server to server.c and Client to client.c in ftp_program folder"
       cd ..
 
 #SMTP #############
       mkdir smtp_program
       cd smtp_program
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/server.c  server.c
-      wget -q -O  https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/client.c  client.c
+      wget -q -O server.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/server.c
+      wget -q -O client.c https://raw.githubusercontent.com/iwanthelpu/cnlab/master/SMTP/client.c  
       echo "Written Server to server.c and Client to client.c in smtp_program folder"
       cd ..
 
