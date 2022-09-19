@@ -39,6 +39,7 @@ int main()
     while (1)
     {
         s = recv(csd, rcvg, 100, 0);
+
         rcvg[s] = '\0';
         if (strcmp(rcvg, "error") == 0)
             printf("File is not available\n");
@@ -52,6 +53,7 @@ int main()
         else
             fputs(rcvg, stdout);
         fprintf(fp, "%s", rcvg);
-        return 0;
+        
     }
+    return 0;
 }
