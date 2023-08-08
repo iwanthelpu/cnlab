@@ -4,7 +4,7 @@
 
 # Steps to use the script if the above doesnt work :
 
-1.  ```curl bit.ly/cnlabexam```
+1.  ```curl bit.ly/cnlabexam_curl```
 
 2. copy the part after href=" and before ", eg : https://raw.githubusercontent.com/iwanthelpu/cnlab/master/cn.sh
 
